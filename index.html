@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <nav class="navbar bg-gradient-to-r from-amber-950 to-amber-700 text-white px-6 py-3 flex items-center justify-between">
+  <!-- caffeiene -->
+  <h1 class="abril-fatface-regular font-extrabold text-3xl">Caffeine</h1>
+
+  <!-- nav itenms -->
+  <ul class="hidden md:flex list-none flex-row items-center text-xl space-x-8 dancing-script">
+    <li><a href="#home" class="text-gray-300 hover:text-white font-bold transition">Home</a></li>
+    <li><a href="#menu" class="text-gray-300 hover:text-white font-bold transition">Menu</a></li>
+    <li><a href="#aboutus" class="text-gray-300 hover:text-white font-bold transition">About Us</a></li>
+    <li><a href="#contact" class="text-gray-300 hover:text-white font-bold transition">Contact Us</a></li>
+  </ul>
+
+  <!-- desktop -->
+  <div class="hidden md:flex items-center space-x-4">
+    <div class="flex items-center bg-white text-black rounded-lg px-2">
+      <input type="text" id="search" placeholder="Search"
+        class="px-2 py-1 bg-transparent outline-none w-32 placeholder-gray-500" />
+      <span class="material-symbols-outlined text-gray-600 cursor-pointer">search</span>
+    </div>
+    <button class="border border-amber-50 px-4 py-2 rounded-lg hover:bg-amber-800 transition">
+      Sign In
+    </button>
+  </div>
+
+  <!-- menu -->
+  <button id="menu-btn" class="md:hidden flex items-center focus:outline-none hover:text-amber-100 abril-fatface-regular">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" 
+       fill="currentColor" class="w-8 h-8 text-white">
+    <path d="M80 120h352c13.3 0 24-10.7 24-24S445.3 72 432 72H80c-13.3 0-24 10.7-24 24s10.7 24 24 24zm352 88H80c-13.3 0-24 10.7-24 24s10.7 24 24 24h352c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 112H80c-13.3 0-24 10.7-24 24s10.7 24 24 24h352c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/>
+  </svg>
+  </button>
+</nav>
+
+<!--for small screen -->
+<div id="mobile-menu" class="hidden md:hidden bg-amber-900 text-white px-6 py-4 space-y-4">
+  <a href="#home" class="block hover:text-gray-300">Home</a>
+  <a href="#menu" class="block hover:text-gray-300">Menu</a>
+  <a href="#aboutus" class="block hover:text-gray-300">About Us</a>
+  <a href="#contact" class="block hover:text-gray-300">Contact Us</a>
+  <div class="flex flex-col space-y-3">
+    <div class="flex items-center bg-white text-black rounded-lg px-2">
+      <input type="text" placeholder="Search"
+        class="px-2 py-1 bg-transparent outline-none flex-1 placeholder-gray-500" />
+      <span class="material-symbols-outlined text-gray-600 cursor-pointer">search</span>
+    </div>
+    <button class="border border-amber-50 px-4 py-2 rounded-lg hover:bg-amber-800 transition">
+      Sign In
+    </button>
+  </div>
+</div>
+
+<!-- Toggle Script -->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+<!-- first page -->
+<div class="flex flex-col md:flex-row lg:flex-row items-start justify-between px-5 py-0 gap-2  bg-linear-to-r from-amber-950 to-amber-700">
+<div class=" my-20 mx-5 basis-1/2">
+  <h1 class="text-amber-100/70 font-bold text-6xl abril-fatface-regular px-10 text-shadow-black text-shadow-lg/30 ">Discover The <br> Art Of Perfect <br> Coffee</h1>
+
+  <p class="text-amber-50 text-shadow-black text-shadow-lg/30 abril-fatface-regular px-10 py-3">Experience The Rich and Bold Flavors Of Our <br> 
+    Exquisite Coffee Blends, Crafted To Awaken Your <br>
+    Senses and Start Your Day Right </p>
+  <button class="bg-amber-100 px-5 py-1.5 border-amber-100 mx-10 text-amber-950 font-bold hover:bg-amber-200 rounded-3xl ">Order Now</button> 
+  <button class="text-amber-50 border-amber-50 border-2 px-5 py-1.5 hover:bg-amber-900 rounded-3xl">Explore More</button>
+ <div class=" text-amber-100 py-10 ml-1">
+  <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4  text-center ">
+    <div class="ml-1  ">
+      <h2 class="text-2xl font-bold abril-fatface-regular">50+</h2>
+      <p class="mt-1 text-xl  font-semibold tracking-wide abril-fatface-regular ">Items Of Coffee</p>
+    </div>
+    <div class="">
+      <h2 class="text-2xl  abril-fatface-regular text-bold">20+</h2>
+      <p class="mt-1 text-xl  font-semibold tracking-wide abril-fatface-regular text-semibold">Orders Processing</p>
+    </div>
+    <div class="">
+      <h2 class="text-2xl font-bold abril-fatface-regular text-bold">2k+</h2>
+      <p class="mt-1 text-xl  tracking-wide abril-fatface-regular text-semibold">Happy Customers</p>
+    </div>
+  </div>
+ </div>
+
+</div>
+<!-- image -->
+  <div class=" basis-1/2 flex justify-center"> 
+<img src="coffee.png"  class=" w-[600px] drop-shadow-black drop-shadow-xl rounded-lg ">
+</div>
+</div > 
+<!-- secondpage -->
+<div class="secondpage bg-yellow-100 min-h-screen flex items-center justify-center">
+  <div class=" grid grid-cols-2 gap-4 my-10">
+
+    <div class=" object-cover flex items-center justify-center">
+    <img src="ice-coffee.png" class="w-[300px] rounded-lg shadow-2xl
+     shadow-amber-800 transform rotate-6 " alt="icecoffee">
+      </div>
+  <div class="flex-row  items-center  space-y-2">
+  <div class="flex justify-center items-center  ">
+    <h2 class="text-amber-950 abril-fatface-regular text-7xl text-center p-2">Coffee Heaven</h2>
+  </div>
+  <div class="p-9 flex justify-center"><p class=" font-serif text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore fuga sint ad mollitia dolore! Dignissimos, ipsum quis voluptas ipsa dolorem laudantium quas, delectus quae eum nobis ipsam! Voluptatibus, quae minus architecto, doloribus, corporis voluptates nihil error laborum iste recusandae modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsam minus voluptatibus saepe, dolore eveniet, esse odio adipisci dolor ipsa quibusdam soluta cupiditate possimus eos doloribus! Nemo nam qui sit cumque tenetur consequatur corporis, distinctio, aut fugit dolore tempora eum.
+  </p><br></div>
+<div class="flex justify-center"><button class="bg-amber-950 text-amber-50 text-xl p-2 m-2 hover:bg-amber-800  rounded-2xl">View All -></button></div>
+</div>
+<div class="flex-row  items-center  space-y-2">
+<div class="flex justify-center items-center">
+  <h2 class="text-amber-950 abril-fatface-regular text-7xl p-2 my-5 text-center">Expresso</h2>
+</div>
+  <div class="p-9 flex justify-center">
+  <p  class=" font-serif text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum hic tempora architecto exercitationem dolore modi. Vero ipsa eum rem consequuntur aliquid nulla totam, aperiam deserunt laudantium iusto sed quae, velit quidem voluptatem, aliquam architecto? Fugit ratione omnis quibusdam? Optio magni aliquid temporibus totam quas repellendus tenetur consectetur ducimus, amet, est hic blanditiis dicta sapiente? Inventore soluta mollitia eaque magni dolore?</p></div>
+  <div class="flex justify-center "><button class="bg-amber-950 text-amber-50 text-xl p-2 m-2 hover:bg-amber-800  rounded-2xl ">View All -></button></div>
+</div>
+<div class="object-cover flex items-center justify-center">
+  <img src="expresso.png" alt="expresso" class="w-[300px] rounded-lg shadow-2xl
+     shadow-amber-800 transform -rotate-6"> 
+ </div>
+</div>
+</div>
+<!-- thirdpage -->
+<div class="thirdpage bg-amber-100 flex flex-col justify-center gap-3">
+  <div class="head flex justify-center bg-amber-950"><h2 class=" text-amber-100  text-8xl abril-fatface-regular">Best Selling Items</h2></div>
+  <div class="  flex justify-center "> <p class=" text-amber-950 dancing-script  text-center max-w-3xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident atque, perspiciatis expedita ipsa architecto, impedit, itaque esse quis sequi nesciunt incidunt !</p></div>
+   <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+    <!-- card 1 -->
+    <div class="bg-amber-950 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+      <img src="https://media.istockphoto.com/id/505168330/photo/cup-of-cafe-latte-with-coffee-beans-and-cinnamon-sticks.jpg?s=612x612&w=0&k=20&c=h7v8kAfWOpRapv6hrDwmmB54DqrGQWxlhP_mTeqTQPA=" alt="Item 1" class="w-full h-60 object-cover">
+      <div class="p-6 flex flex-col justify-center">
+        <h3 class="text-3xl font-semibold text-amber-100 text-center ">CAPPUCCINO</h3>
+        <button class="mt-4 bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+          ORDER NOW
+        </button>
+      </div>
+    </div>
+    <!-- card2 -->
+     <div class="bg-amber-950 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+      <img src="https://enjoyjava.com/wp-content/uploads/2021/08/how-to-make-an-americano.jpg" alt="Item 1" class="w-full h-60 object-cover">
+      <div class="p-6 flex flex-col justify-center">
+        <h3 class="text-3xl font-semibold text-amber-100 text-center ">AMERICANO</h3>
+        <button class="mt-4 bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+          ORDER NOW
+        </button>
+      </div>
+    </div>
+     <!-- card3 -->
+     <div class="bg-amber-950 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+      <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" alt="Item 1" class="w-full h-60 object-cover">
+      <div class="p-6 flex flex-col justify-center">
+        <h3 class="text-3xl font-semibold text-amber-100 text-center ">ESPRESSO</h3>
+        <button class="mt-4 bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+          ORDER NOW
+        </button>
+      </div>
+    </div>
+
+</div>
+<!-- forthpage -->
+<div class="bg-amber-950/35 flex flex-col md:flex-row gap-6 p-8 border-amber-950 border-4 ">
+  <div class="flex-1">
+    <h2 class="text-4xl md:text-6xl abril-fatface-regular text-amber-950 p-5 leading-snug  rounded-2xl ">
+      Stay Up To Date On All News And Offers !!
+    </h2>
+  </div>
+
+  <div class="flex-1 flex flex-col justify-center items-center text-center">
+    <p class="text-xl md:text-2xl dancing-script text-amber-800 p-4 max-w-xl">
+      Be The First To Know About New Collections, Special Events And What's Going On At Kitchen
+    </p>
+
+    <form class="flex w-full max-w-md mt-2">
+      <label for="email" class="sr-only">Email Address</label>
+      <input type="email" name="email" id="email" placeholder="Enter your Email Address" class="flex-grow bg-amber-100 p-3 rounded-md focus:outline-none">
+      <button type="submit" class="text-white text-xl px-6 bg-amber-800 rounded-r-lg transition hover:bg-amber-900">
+        → </button>
+    </form>
+  </div>
+</div>
+
+<!-- footer -->
+<div class="bg-amber-100 flex flex-col">
+  <!-- Top Section -->
+  <div class="bg-amber-100 flex flex-col md:flex-row items-center gap-5 px-10 py-8 ">
+
+    <div class="abril-fatface-regular max-w-lg flex-2 ">
+      <h2 class="font-bold p-5 text-xl md:text-3xl text-black  leading-snug border-r-4 border-amber-950">
+        Enjoy Better & Better Quality Coffee With Caffeine
+      </h2>
+    </div>
+
+    <div class="flex-1 flex flex-col items-center text-center ">
+      <iframe width="300" height="250" src="https://www.youtube.com/embed/0jIeCAOkgcQ?si=t4q3vh9eL29Cuanl" title="Coffee video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg shadow-lg p-2 border-r-4 border-amber-950  "></iframe></div>
+      <h2 class="abril-fatface-regular flex-1 text-2xl mt-4 text-center p-4 border-r-4 border-amber-950">Follow Us</h2><br>
+      <div class="flex-1 space-x-6 mt-3 text-orange-800 text-3xl p-3 ">
+        <a href="https://facebook.com" target="_blank" class="hover:text-orange-950 hover:scale-110 transition-transform duration-300"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" class="hover:text-orange-950 hover:scale-110 transition-transform duration-300"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" class="hover:text-orange-950 hover:scale-110 transition-transform duration-300"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="text-center p-6 text-black flex-1 border-l-4 border-amber-950">
+      <h3 class="abril-fatface-regular text-3xl mb-4 ">Contact Us</h3>
+      <ul class="space-y-2 text-lg">
+        <li class="hover:text-amber-600 transition cursor-default">caffeiene@gmail.com</li>
+        <li class="hover:text-amber-600 transition cursor-default">Call: 9822xxxxxx</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <div class=" justify-between gap-6 p-8 bg-amber-950 text-amber-200">
+    <div class="flex-1 flex justify-center items-center">
+      <h2 class="abril-fatface-regular max-w-lg text-xl md:text-2xl font-eabold text-center">
+        VISIT US >> <br>
+        39, ABC Street, V48998
+      </h2>
+    </div> 
+  </div>
+</div>
+</div>
+</body>
+</html>
